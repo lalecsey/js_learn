@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let point = 0;
+        let answer = "";
+        let questions = [
+            "Какую птицу называют лесным доктором?",
+            "Самое глубокое озеро в мире?"
+        ];
+        let answers = ["дятел", "байкал"];
+
+        for (let i = 0; i < questions.length; i++){
+            answer = prompt(questions[i]);
+            if (answer == answers[i]){
+                point += 1;
+                alert("Верно!");
+            }else {
+                alert("Неверно!");
+            }
+        }
+        alert("Вы набрали " + point + ".")
+    </script>
+</body>
+</html>
